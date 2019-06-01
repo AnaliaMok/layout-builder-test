@@ -2,10 +2,13 @@
 /drush/contrib/
 /vendor/
 /web/core/
-/web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+
+# Unignore modules installed manually.
+/web/modules/contrib/
+!web/modules/contrib/block_blacklist/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
