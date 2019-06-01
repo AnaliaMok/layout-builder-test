@@ -1,0 +1,17 @@
+uuid: 11cfce40-9a22-4a39-bf54-0cdf6a9dec17
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Landing Page'
+type: landing_page
+description: 'Content type for building landing pages'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

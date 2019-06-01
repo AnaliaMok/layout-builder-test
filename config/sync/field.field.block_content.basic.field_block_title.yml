@@ -1,0 +1,21 @@
+uuid: 96b0d25e-6414-4128-8354-96df90b53929
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_block_title
+  module:
+    - text
+id: block_content.basic.field_block_title
+field_name: field_block_title
+entity_type: block_content
+bundle: basic
+label: 'Block Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,12 @@
+uuid: 0645c85b-9705-4767-bc3e-0ffc0a311e2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - workspaces
+_core:
+  default_config_hash: e0Wvw-yOQy3q1edTu3t5bLP5tZFdJeq9PDFhs_XEAlg
+id: workspace.deploy
+label: Deploy
+targetEntityType: workspace
+cache: true
