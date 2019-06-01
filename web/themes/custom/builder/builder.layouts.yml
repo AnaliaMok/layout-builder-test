@@ -1,0 +1,23 @@
+layout_onecol_100:
+  label: "One column 100"
+  path: layouts/onecol
+  template: layout--onecol
+  category: "Columns: 1"
+  default_region: content
+  regions:
+    content:
+      label: Content
+  icon_map:
+    - [content]
+
+layout_twocol_50_50:
+  label: "Two Column 50/50"
+  path: layouts/twocol_50_50
+  template: layout--twocol-50-50
+  regions:
+    first:
+      label: "First Column"
+    second:
+      label: "Second Column"
+  icon_map:
+    - [first, second]

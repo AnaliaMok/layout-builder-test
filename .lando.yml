@@ -1,0 +1,4 @@
+name: layout-builder-test
+recipe: drupal8
+config:
+  webroot: web

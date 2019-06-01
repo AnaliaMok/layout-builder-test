@@ -1,0 +1,13 @@
+name: Builder
+type: theme
+description: Custom theme to be used alongside the layout builder module
+core: 8.x
+php: 7.2
+base theme: stable
+libraries:
+  - builder/global-styling
+  - builder/global-scripts
+regions:
+  header: Header
+  content: Content
+  footer: Footer

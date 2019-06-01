@@ -1,0 +1,35 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Apply to list items */
+.tab a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-width: 2px;
+  border-left-width: 0;
+  border-bottom: 0;
+
+  transition: all 0.4s;
+}
+
+.tab:hover a,
+.tab:focus a {
+  @apply bg-teal-100 text-teal-700;
+}
+
+.tab:first-child a {
+  border-left-width: 2px;
+}
+.tab:last-child a {
+  border-right-width: 2px;
+}
+
+/* Form Inputs */
+.form-wrapper input[type="submit"] {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
