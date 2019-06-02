@@ -15,6 +15,8 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -25,6 +27,7 @@ module:
   help: 0
   history: 0
   image: 0
+  kint: 0
   language: 0
   layout_builder: 0
   layout_builder_restrictions: 0
@@ -52,6 +55,12 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  webform: 0
+  webform_attachment: 0
+  webform_node: 0
+  webform_submission_log: 0
+  webform_templates: 0
+  webform_ui: 0
   workflows: 0
   workspaces: 0
   menu_link_content: 1
