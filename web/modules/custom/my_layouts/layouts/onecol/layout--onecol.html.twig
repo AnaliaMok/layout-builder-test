@@ -1,3 +1,17 @@
-<section{{ attributes.addClass('one-col') }}>
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ * @see https://www.drupal.org/docs/8/api/layout-api/how-to-register-layouts
+ */
+#}
+
+<section{{ attributes.addClass(['layout', 'layout--onecol']) }}>
   {{ content.content }}
 </section>

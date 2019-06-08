@@ -1,0 +1,17 @@
+.layout.layout--twocol {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.layout--twocol > .col {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .layout--twocol > .col {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}

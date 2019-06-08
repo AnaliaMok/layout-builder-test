@@ -1,0 +1,8 @@
+onecol:
+  css:
+    theme:
+      layouts/onecol/onecol.css: {}
+twocol_50_50:
+  css:
+    theme:
+      layouts/twocol_50_50/twocol-50-50.css: {}

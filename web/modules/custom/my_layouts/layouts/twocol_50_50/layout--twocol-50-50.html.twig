@@ -11,14 +11,14 @@
  * @see https://www.drupal.org/docs/8/api/layout-api/how-to-register-layouts
  */
 #}
-<div{{ attributes.addClass(['two-col', 'd-flex']) }}>
+<div{{ attributes.addClass(['layout', 'layout--twocol']) }}>
   {% if content.first %}
-  <div{{ region_attributes.first.addClass(['flex', 'w-1/2']) }}>
+  <div{{ region_attributes.first.addClass(['col']) }}>
     {{ content.first }}
   </div>
   {% endif %}
   {% if content.second %}
-  <div{{ region_attributes.second.addClass(['flex', 'w-1/2']) }}>
+  <div{{ region_attributes.second.addClass(['col']) }}>
     {{ content.second }}
   </div>
   {% endif %}
