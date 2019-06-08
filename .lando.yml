@@ -2,3 +2,10 @@ name: layout-builder-test
 recipe: drupal8
 config:
   webroot: web
+tooling:
+  drupalupdate:
+    service: appserver
+    cmd:
+      - composer update drupal/core webflo/drupal-core-require-dev --with-dependencies
+      - drush updatedb
+      - drush cr
