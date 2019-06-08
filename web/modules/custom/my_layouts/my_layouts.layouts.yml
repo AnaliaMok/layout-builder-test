@@ -2,8 +2,10 @@ layout_onecol_100:
   label: "One column 100"
   path: layouts/onecol
   template: layout--onecol
-  category: "Columns: 1"
+  category: "My Layouts"
   default_region: content
+  icon_map:
+    - [content]
   regions:
     content:
       label: Content
@@ -14,6 +16,8 @@ layout_twocol_50_50:
   label: "Two Column 50/50"
   path: layouts/twocol_50_50
   template: layout--twocol-50-50
+  category: "My Layouts"
+  default_region: first
   regions:
     first:
       label: "First Column"

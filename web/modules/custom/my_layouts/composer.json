@@ -1,0 +1,14 @@
+{
+  "name": "drupal/my_layouts",
+  "type": "drupal-module",
+  "description": "Custom layouts definitions",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/my_layouts",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/my_layouts",
+    "source": "http://cgit.drupalcode.org/my_layouts"
+  },
+  "require": { }
+}

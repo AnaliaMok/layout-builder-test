@@ -1,0 +1,5 @@
+name: 'My Layouts'
+type: module
+description: 'Custom layouts definitions'
+core: 8.x
+package: 'Custom'

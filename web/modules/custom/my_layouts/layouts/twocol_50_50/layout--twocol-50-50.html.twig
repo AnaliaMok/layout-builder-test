@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column 50-50 layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ * @see https://www.drupal.org/docs/8/api/layout-api/how-to-register-layouts
+ */
+#}
+<div{{ attributes.addClass(['two-col', 'd-flex']) }}>
+  {% if content.first %}
+  <div{{ region_attributes.first.addClass(['flex', 'w-1/2']) }}>
+    {{ content.first }}
+  </div>
+  {% endif %}
+  {% if content.second %}
+  <div{{ region_attributes.second.addClass(['flex', 'w-1/2']) }}>
+    {{ content.second }}
+  </div>
+  {% endif %}
+</div>

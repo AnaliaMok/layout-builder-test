@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains my_layouts.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function my_layouts_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the my_layouts module.
+    case 'help.page.my_layouts':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom layouts definitions') . '</p>';
+      return $output;
+
+    default:
+  }
+}
