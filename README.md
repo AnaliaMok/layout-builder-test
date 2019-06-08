@@ -11,8 +11,13 @@ An experimental Drupal 8.7.x project aimed towards testing the new core Layout B
 4. Install Drupal using `lando drush si --db-url=mysql://drupal8:drupal8@database/drupal8` OR visit the .lndo https link provided by lando and go throuh the manual install. (All necessary information available by running `lando info`)
 4. Next, run `lando drush cim -y` to get all up-to-date configuration
 
+Happy Hacking!
+
 ### Setting Up Theme Development
-__NOTE__: This theme comes pre-config
+__NOTE__: This theme comes pre-configured with:
+* Laravel Mix - Task runner for compiling css and javascript
+  * Comes with PurgeCSS to remove unused classes
+* [TailwindCSS](https://tailwindcss.com/)
 
 1. From within `/web/themes/custom/builder`, run `npm install`
 2. To run hot-reloading, run `npm run watch`
