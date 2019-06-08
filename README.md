@@ -15,8 +15,8 @@ Happy Hacking!
 
 ### Setting Up Theme Development
 __NOTE__: This theme comes pre-configured with:
-* Laravel Mix - Task runner for compiling css and javascript
-  * Comes with PurgeCSS to remove unused classes
+* [Laravel Mix](https://laravel-mix.com/) - Task runner for compiling css and javascript
+  * Comes with PurgeCSS to remove unused css
 * [TailwindCSS](https://tailwindcss.com/)
 
 1. From within `/web/themes/custom/builder`, run `npm install`
