@@ -5,6 +5,7 @@ layout_onecol_100:
   category: "My Layouts"
   default_region: content
   library: my_layouts/onecol
+  class: '\Drupal\my_layouts\Plugin\Layout\MyLayouts'
   icon_map:
     - [content]
   regions:
@@ -17,9 +18,10 @@ layout_twocol_50_50:
   label: "Two Column 50/50"
   path: layouts/twocol_50_50
   template: layout--twocol-50-50
-  library: my_layouts/twocol_50_50
   category: "My Layouts"
   default_region: first
+  library: my_layouts/twocol_50_50
+  class: '\Drupal\my_layouts\Plugin\Layout\MyLayouts'
   regions:
     first:
       label: "First Column"

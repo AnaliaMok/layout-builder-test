@@ -2,6 +2,12 @@ name: layout-builder-test
 recipe: drupal8
 config:
   webroot: web
+services:
+  appserver:
+    webroot: web
+    xdebug: true
+    config:
+      php: .vscode/php.ini
 tooling:
   drupalupdate:
     service: appserver

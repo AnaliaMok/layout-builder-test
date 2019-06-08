@@ -6,12 +6,21 @@
  * Available variables:
  * - content: The content for this layout.
  * - attributes: HTML attributes for the layout <div>.
+ * - settings: Extra settings registered in the MyLayouts Plugin class.
  *
  * @ingroup themeable
  * @see https://www.drupal.org/docs/8/api/layout-api/how-to-register-layouts
  */
 #}
 
-<section{{ attributes.addClass(['layout', 'layout--onecol']) }}>
+{%
+  set classes = [
+    'layout',
+    'layout--onecol',
+    settings.extra_classes,
+    settings.section_size == 'full' ? 'layout--full' : 'container',
+  ]
+%}
+<section{{ attributes.addClass(classes) }}>
   {{ content.content }}
 </section>

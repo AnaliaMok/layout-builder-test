@@ -6,19 +6,30 @@
  * Available variables:
  * - content: The content for this layout.
  * - attributes: HTML attributes for the layout <div>.
+ * - settings: Extra settings registered in the MyLayouts Plugin class.
  *
  * @ingroup themeable
  * @see https://www.drupal.org/docs/8/api/layout-api/how-to-register-layouts
  */
 #}
-<div{{ attributes.addClass(['layout', 'layout--twocol']) }}>
+{%
+  set classes = [
+    'layout',
+    'layout--twocol',
+    settings.extra_classes,
+    settings.section_size == 'full' ? 'layout--full' : 'container mx-auto',
+  ]
+%}
+
+{% set add_padding = settings.pad_blocks ? 'col--padded' : '' %}
+<div{{ attributes.addClass(classes) }}>
   {% if content.first %}
-  <div{{ region_attributes.first.addClass(['col']) }}>
+  <div{{ region_attributes.first.addClass(['col', add_padding]) }}>
     {{ content.first }}
   </div>
   {% endif %}
   {% if content.second %}
-  <div{{ region_attributes.second.addClass(['col']) }}>
+  <div{{ region_attributes.second.addClass(['col', add_padding]) }}>
     {{ content.second }}
   </div>
   {% endif %}

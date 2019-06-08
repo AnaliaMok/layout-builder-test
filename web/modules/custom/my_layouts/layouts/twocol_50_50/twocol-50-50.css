@@ -9,6 +9,10 @@
   flex: 1 1 100%;
 }
 
+.layout--twocol > .col.col--padded {
+  padding: 1rem;
+}
+
 @media (min-width: 768px) {
   .layout--twocol > .col {
     flex: 1 1 50%;
