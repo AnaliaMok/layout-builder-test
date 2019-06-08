@@ -69,6 +69,6 @@ class MyLayouts extends LayoutDefault implements PluginFormInterface
     {
         $this->configuration['extra_classes'] = $form_state->getValue('extra_classes');
         $this->configuration['section_size'] = $form_state->getValue('section_size');
-        $this->configuration['pad_blocks'] = $form_state->getValue('pad_blocks');
+        $this->configuration['pad_blocks'] = $form_state->getValue('pad_blocks') ?? $this->configuration['pad_blocks'];
     }
 }

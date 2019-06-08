@@ -1,7 +1,7 @@
 layout_onecol_100:
   label: "One column 100"
   path: layouts/onecol
-  template: layout--onecol
+  template: layout--onecol-100
   category: "My Layouts"
   default_region: content
   library: my_layouts/onecol
