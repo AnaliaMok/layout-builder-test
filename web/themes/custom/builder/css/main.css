@@ -33,3 +33,66 @@
   display: inline-block;
   padding: 0.5rem 1rem;
 }
+
+form {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+form.user-login-form {
+  width: 50%;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #bbb;
+}
+
+form input[type="submit"] {
+  @apply bg-teal-600 font-bold text-gray-100;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.user-login-form input[type="submit"] {
+  width: 50%;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+  @apply shadow-lg;
+  cursor: pointer;
+}
+
+form input[type="submit"]:focus {
+  outline-color: #b2f5ea;
+}
+
+.form-required::after {
+  @apply text-red-700;
+  display: inline-block;
+  content: "*";
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.layout-builder-add-block .ui-menu-item,
+.layout-builder-configure-block .ui-menu-item,
+.layout-builder-add-block .ui-menu-item a,
+.layout-builder-configure-block .ui-menu-item a {
+  background-color: white;
+}
