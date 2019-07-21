@@ -4,6 +4,16 @@
 
 @tailwind utilities;
 
+.item-list ul {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+.item-list ul a {
+  @apply text-teal-600;
+  text-decoration: underline;
+}
+
 /* Apply to list items */
 .tab a {
   display: inline-block;
@@ -55,7 +65,7 @@ form input[type="password"],
 form textarea {
   display: block;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px;
   border: 1px solid #bbb;
 }
 

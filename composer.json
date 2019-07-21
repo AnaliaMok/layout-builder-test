@@ -13,6 +13,11 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/lullabot/block_dashboard.git",
+            "no-api": true
         }
     ],
     "require": {
@@ -24,9 +29,11 @@
         "drupal/core": "^8.7.0",
         "drupal/devel": "^2.1",
         "drupal/entity_browser": "^2.1",
-        "drupal/layout_builder_restrictions": "^1.5",
+        "drupal/entity_usage": "^2.0@beta",
+        "drupal/layout_builder_restrictions": "^2.1",
         "drupal/webform": "^5.2",
         "drush/drush": "^9.0.0",
+        "lullabot/block_dashboard": "dev-master",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",

@@ -48,7 +48,10 @@ third_party_settings:
             weight: 1
         third_party_settings: {  }
   layout_builder_restrictions:
-    allowed_blocks: {  }
+    allowed_blocks:
+      Forms: {  }
+      Webform:
+        - webform_block
     allowed_layouts:
       - layout_threecol_section
       - layout_fourcol_section

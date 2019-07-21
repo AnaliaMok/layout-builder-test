@@ -1,0 +1,12 @@
+{
+    "name": "custom_blocks",
+    "type": "drupal-module",
+    "description": "Module for custom blocks",
+    "keywords": [],
+    "homepage": "https://www.drupal.org/project/custom_blocks",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/custom_blocks",
+        "source": "http://cgit.drupalcode.org/custom_blocks"
+    }
+}
