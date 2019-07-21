@@ -48,15 +48,18 @@ third_party_settings:
             weight: 1
         third_party_settings: {  }
   layout_builder_restrictions:
-    allowed_blocks:
-      Forms: {  }
-      Webform:
-        - webform_block
-    allowed_layouts:
-      - layout_threecol_section
-      - layout_fourcol_section
-      - layout_onecol_100
-      - layout_twocol_50_50
+    entity_view_mode_restriction:
+      allowed_blocks:
+        Forms: {  }
+        'Inline blocks':
+          - 'inline_block:basic'
+        Webform:
+          - webform_block
+      allowed_layouts:
+        - layout_threecol_section
+        - layout_fourcol_section
+        - layout_onecol_100
+        - layout_twocol_50_50
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page

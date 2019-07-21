@@ -1,0 +1,47 @@
+track_enabled_base_fields: false
+local_task_enabled_entity_types:
+  - block
+  - block_content
+  - block_content_type
+  - contact_form
+  - image_style
+  - media
+  - webform
+usage_controller_items_per_page: 25
+_core:
+  default_config_hash: AXUBMTvVtpcNp0jKjDaWjSHqMy6HjuUf7j4yVbXgazI
+track_enabled_source_entity_types:
+  - block_content
+  - comment
+  - contact_message
+  - media
+  - node
+  - shortcut
+  - taxonomy_term
+  - webform_submission
+  - workspace
+  - workspace_association
+  - menu_link_content
+track_enabled_target_entity_types:
+  - block_content
+  - comment
+  - contact_message
+  - media
+  - node
+  - shortcut
+  - taxonomy_term
+  - webform_submission
+  - workspace
+  - workspace_association
+  - menu_link_content
+edit_warning_message_entity_types: {  }
+delete_warning_message_entity_types: {  }
+track_enabled_plugins:
+  - block_field
+  - dynamic_entity_reference
+  - entity_embed
+  - entity_reference
+  - html_link
+  - link
+  - linkit
+site_domains: {  }

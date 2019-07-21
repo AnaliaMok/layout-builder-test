@@ -1,0 +1,52 @@
+uuid: 18b3aaa0-dbc0-46f4-9721-e2fb4f4f1576
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_builder_restrictions:
+    entity_view_mode_restriction:
+      allowed_blocks:
+        Forms: {  }
+        'Inline blocks':
+          - 'inline_block:basic'
+          - 'inline_block:image_block'
+        Webform:
+          - webform_block
+      allowed_layouts:
+        - layout_threecol_section
+        - layout_fourcol_section
+        - layout_onecol_100
+        - layout_twocol_50_50
+id: node.landing_page.full
+targetEntityType: node
+bundle: landing_page
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
