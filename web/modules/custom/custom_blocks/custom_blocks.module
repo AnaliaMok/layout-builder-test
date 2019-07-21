@@ -31,5 +31,9 @@ function custom_blocks_theme() {
     'custom_blocks' => [
       'render element' => 'children',
     ],
+    'simple_image_block' => [
+      'variables' => ['caption' => NULL],
+      'template' => 'block--simple-image-block'
+    ]
   ];
 }

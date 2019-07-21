@@ -1,0 +1,8 @@
+uuid: 19069419-0d05-40ec-b11e-6e29f46ecb2c
+langcode: en
+status: true
+dependencies: {  }
+id: image_figure_block
+label: 'Image Figure Block'
+revision: 0
+description: 'Basic block containing an image and an optional caption'

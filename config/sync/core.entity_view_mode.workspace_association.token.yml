@@ -1,0 +1,10 @@
+uuid: f71b4a7c-8a0c-4f9a-ad40-65f12f7ea600
+langcode: en
+status: true
+dependencies:
+  module:
+    - workspaces
+id: workspace_association.token
+label: Token
+targetEntityType: workspace_association
+cache: true

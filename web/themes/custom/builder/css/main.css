@@ -44,32 +44,39 @@
   padding: 0.5rem 1rem;
 }
 
-form {
+.webform-submission-form,
+.user-login-form {
   display: block;
   margin: 0 auto 1rem;
 }
 
-form.user-login-form {
+.user-login-form {
   width: 50%;
 }
 
-form label {
+.user-login-form label,
+.webform-submission-form label {
   display: inline-block;
   font-weight: bold;
   margin: 1rem 0 0.5rem;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-form textarea {
+.user-login-form input[type="text"],
+.user-login-form input[type="email"],
+.user-login-form input[type="password"],
+.user-login-form textarea,
+.webform-submission-form input[type="text"],
+.webform-submission-form input[type="email"],
+.webform-submission-form input[type="password"],
+.webform-submission-form textarea {
   display: block;
   width: 100%;
   padding: 10px;
   border: 1px solid #bbb;
 }
 
-form input[type="submit"] {
+.user-login-form input[type="submit"],
+.webform-submission-form input[type="submit"] {
   @apply bg-teal-600 font-bold text-gray-100;
   margin-top: 1rem;
   cursor: pointer;
@@ -79,13 +86,16 @@ form input[type="submit"] {
   width: 50%;
 }
 
-form input[type="submit"]:hover,
-form input[type="submit"]:focus {
+.user-login-form input[type="submit"]:hover,
+.user-login-form input[type="submit"]:focus,
+.webform-submission-form input[type="submit"]:hover,
+.webform-submission-form input[type="submit"]:focus {
   @apply shadow-lg;
   cursor: pointer;
 }
 
-form input[type="submit"]:focus {
+.user-login-form input[type="submit"]:focus,
+.webform-submission-form input[type="submit"]:focus {
   outline-color: #b2f5ea;
 }
 

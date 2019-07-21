@@ -11,8 +11,9 @@ module:
   config: 0
   config_translation: 0
   contact: 0
+  content_browser: 0
   contextual: 0
-  custom_blocks: 0
+  ctools: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
@@ -20,7 +21,12 @@ module:
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
+  entity: 0
   entity_browser: 0
+  entity_browser_block: 0
+  entity_embed: 0
+  entity_reference: 0
   entity_usage: 0
   field: 0
   field_ui: 0
@@ -32,6 +38,7 @@ module:
   kint: 0
   language: 0
   layout_builder: 0
+  layout_builder_modal: 0
   layout_builder_restrictions: 0
   layout_discovery: 0
   link: 0
@@ -53,6 +60,7 @@ module:
   taxonomy: 0
   telephone: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
@@ -67,6 +75,7 @@ module:
   workflows: 0
   workspaces: 0
   menu_link_content: 1
+  pathauto: 1
   content_translation: 10
   views: 10
   standard: 1000

@@ -3,14 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browse_content
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_recommended_article
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
+    - entity_browser
     - image
     - path
     - text
@@ -50,6 +53,20 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_recommended_article:
+    weight: 121
+    settings:
+      entity_browser: browse_content
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 3

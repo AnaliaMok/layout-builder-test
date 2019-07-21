@@ -33,9 +33,10 @@ class SimpleImageBlock extends BlockBase implements BlockPluginInterface {
     $config = $this->getConfiguration();
 
     $form['image_caption'] = [
-      '#type' => 'html',
+      '#type' => 'text_format',
       '#title' => $this->t('Image Caption'),
       '#description' => $this->t('Optional caption text describing the given image'),
+      '#format' => 'basic_html',
       '#default_value' => isset($config['image_caption']) ?  $config['image_caption'] : '',
       '#weight' => '0',
     ];
@@ -55,9 +56,10 @@ class SimpleImageBlock extends BlockBase implements BlockPluginInterface {
    * {@inheritdoc}
    */
   public function build() {
-    $build = [];
-    $build['#theme'] = 'simple_image_block';
-    $build['#content'][] = $this->configuration['image_caption'];
+
+    $build = [
+      '#caption' => $this->configuration['image_caption'],
+    ];
 
     return $build;
   }

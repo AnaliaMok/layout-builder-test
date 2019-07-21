@@ -1,0 +1,76 @@
+uuid: a46bd417-1081-4ac8-8935-eff87f94d354
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_figure_block
+    - field.field.block_content.image_figure_block.field_image
+    - field.field.block_content.image_figure_block.field_image_caption
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          150022f3-7093-465d-9350-5a4cf8fbcaf9:
+            uuid: 150022f3-7093-465d-9350-5a4cf8fbcaf9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:image_figure_block:field_image'
+              formatter:
+                type: entity_reference_entity_view
+                label: visually_hidden
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          bf454490-6a2c-4428-99bb-7ce33706bf82:
+            uuid: bf454490-6a2c-4428-99bb-7ce33706bf82
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:image_figure_block:field_image_caption'
+              formatter:
+                label: visually_hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: block_content.image_figure_block.default
+targetEntityType: block_content
+bundle: image_figure_block
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image_caption:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true

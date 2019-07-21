@@ -1,0 +1,30 @@
+uuid: c1717fa5-59de-4bdc-a8a7-5dbb6e83a6f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.landing_page.content_browser
+targetEntityType: node
+bundle: landing_page
+mode: content_browser
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true
+  layout_builder__layout: true

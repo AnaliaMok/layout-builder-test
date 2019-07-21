@@ -50,11 +50,25 @@ third_party_settings:
   layout_builder_restrictions:
     entity_view_mode_restriction:
       allowed_blocks:
+        'Chaos Tools': {  }
+        'Content fields':
+          - 'field_block:node:landing_page:uid'
+          - 'field_block:node:landing_page:body'
+          - 'field_block:node:landing_page:status'
+          - 'field_block:node:landing_page:title'
+        'Custom block types':
+          - basic
+          - image_figure_block
+        Devel: {  }
         Forms: {  }
         'Inline blocks':
           - 'inline_block:basic'
+          - 'inline_block:image_figure_block'
+        'Simple Blocks': {  }
         Webform:
           - webform_block
+        core:
+          - page_title_block
       allowed_layouts:
         - layout_threecol_section
         - layout_fourcol_section
